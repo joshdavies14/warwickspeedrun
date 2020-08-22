@@ -4,7 +4,7 @@ function easing(t) {
 };
 
 /** Countdown timer **/
-const countDownDate = new Date("Feb 13, 2021 10:00:00").getTime();
+const countDownDate = new Date("2021-02-13T10:00:00Z").getTime();
 
 // Update the count down every 1 second
 const x = setInterval(function () {
