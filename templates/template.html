@@ -102,7 +102,6 @@
     </g>
   </svg>
 </section>
-<!-- TODO: Include WASD logo SVG as asset -->
 <section id="about" class="section">
   <div class="container">
     <div class="columns">
@@ -115,6 +114,24 @@
       </div>
       <div id="stopwatch-column" class="column is-4 is-flex-tablet is-hidden-mobile">
         {{ stopwatch_svg }}
+      </div>
+    </div>
+    <div class="logo-level">
+      <h4 class="title is-size-4">Partners</h4>
+      {{ partners_list }}
+    </div>
+    {% if sponsors_list %}
+      <div class="logo-level">
+        <h4 class="title is-size-4">Sponsors</h4>
+        {{ sponsors_list }}
+      </div>
+    {% endif %}
+    <div class="logo-level">
+      <h4 class="title is-size-4">Supporting</h4>
+      <div class="logos">
+        <a class="large" href="https://www.specialeffect.org.uk/">
+          <img src="/dist/img/specialeffect.png" alt="SpecialEffect"/>
+        </a>
       </div>
     </div>
   </div>
@@ -149,12 +166,12 @@
       </div>
       {{ whats_on }}
       <div class="column is-8 is-offset-2">
-          <div class="content has-text-centered">
-            <p>Want to take part in WASD2020? <strong>Submit a run!</strong></p>
-            <a target="_blank" href="https://wasd.warwick.gg/signup" class="button is-medium is-wasd">Sign up</a>
-            <p><small>Sign ups close on the 4th December 2020 at 23:59 UTC.</small></p>
-          </div>
+        <div class="content has-text-centered">
+          <p>Want to take part in WASD2020? <strong>Submit a run!</strong></p>
+          <a target="_blank" href="https://wasd.warwick.gg/signup" class="button is-medium is-wasd">Sign up</a>
+          <p><small>Sign ups close on the 4th December 2020 at 23:59 UTC.</small></p>
         </div>
+      </div>
     </div>
   </div>
 </section>

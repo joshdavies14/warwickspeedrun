@@ -1,5 +1,4 @@
 import os
-from pathlib import Path
 
 import markdown
 from jinja2 import Environment, FileSystemLoader
