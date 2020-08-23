@@ -19,6 +19,9 @@ for file_name in os.listdir("content"):
 
             rendered_content[file_name.strip(".md")] = content_html
 
+# SVG Logo injection
+rendered_content["wasd_keys_logo"] = open(os.path.join("src", "svg", "wasd-keys.svg"), "r").read()
+
 # Load the JS for injection into the template
 rendered_content["javascript"] = open(os.path.join("src", "js", "site.js"), "r").read()
 
