@@ -1,0 +1,3 @@
+[submodule "src/wasd-stylesheet"]
+	path = src/wasd-stylesheet
+	url = git@github.com:davidjrichardson/wasd-stylesheet.git

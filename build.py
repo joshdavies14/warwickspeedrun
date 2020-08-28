@@ -8,6 +8,7 @@ env = Environment(
     loader=FileSystemLoader("templates"),
 )
 jinja_template = env.get_template('template.html')
+dev_flag = 'DEV' in os.environ
 
 # Loads and renders markdown
 for file_name in os.listdir("content"):
@@ -26,4 +27,9 @@ rendered_content["stopwatch_svg"] = open(os.path.join("src", "svg", "stopwatch.s
 rendered_content["javascript"] = open(os.path.join("src", "js", "site.js"), "r").read()
 
 with open(os.path.join("dist", "index.html"), mode="w") as out_file:
-    out_file.write(jinja_template.render(**rendered_content))
+    content = jinja_template.render(**rendered_content)
+    # Remove development mode content from the template
+    if not dev_flag:
+        content = content.replace('http://localhost:8080', '')
+
+    out_file.write(content)
