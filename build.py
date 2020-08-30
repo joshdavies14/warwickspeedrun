@@ -26,7 +26,7 @@ rendered_content["stopwatch_svg"] = open(os.path.join("src", "svg", "stopwatch.s
 # Load the JS for injection into the template
 rendered_content["javascript"] = open(os.path.join("src", "js", "site.js"), "r").read()
 
-with open(os.path.join("dist", "index.html"), mode="w") as out_file:
+with open(os.path.join("index.html"), mode="w") as out_file:
     content = jinja_template.render(**rendered_content)
     # Remove development mode content from the template
     if not dev_flag:
