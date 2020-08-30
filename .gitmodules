@@ -1,3 +1,4 @@
 [submodule "src/wasd-stylesheet"]
 	path = src/wasd-stylesheet
-	url = git@github.com:davidjrichardson/wasd-stylesheet.git
+	url = https://github.com/davidjrichardson/wasd-stylesheet/
+	branch = master
