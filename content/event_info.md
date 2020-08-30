@@ -32,7 +32,7 @@ WASD is run by a committee of students and alumni of the University of Warwick, 
 
 The University of Warwick has fantastic connections with the city of Coventry, which is easily accessible by the national rail network. The campus is very close to and signposted on both the A45 and A46 roads. Coventry is also 20 minute train journey away from Birmingham International airport.
 
-More information on how to get to WASD 2021 will be available in our [infopack](https://wasd.warwick.gg/infopack).
+More information on how to get to WASD 2021 will be available in our infopack when it becomes available.
 
 </div>
 
